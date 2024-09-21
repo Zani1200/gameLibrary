@@ -1,12 +1,13 @@
-package com.example.gameLibrary.entity;
+package com.example.gameLibrary.model;
 
 import jakarta.persistence.*;
 
 @Entity
-public class Juegos {
+@Table(name = "Juegos")
+public class JuegosModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idJuego;
+    private Integer idJuego;
     @Column
     private String nomJuego;
 
